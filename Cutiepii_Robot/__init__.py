@@ -369,7 +369,7 @@ arq = ARQ("https://arq.hamker.in", "ERUOGT-KHSTDT-RUYZKQ-FZNSHO-ARQ",
 LOGGER.debug(
     "[CUTIEPII]: Connecting To Yūki • Data Center • Mumbai • PostgreSQL Database"
 )
-ubot = TelegramClient(StringSession(STRING_SESSION), APP_ID, APP_HASH)
+# ubot = TelegramClient(StringSession(STRING_SESSION), APP_ID, APP_HASH)
 LOGGER.debug(
     "[CUTIEPII]: Connecting To Yūki • Cutiepii Userbot (https://telegram.dog/Awesome_Cutiepii)"
 )
