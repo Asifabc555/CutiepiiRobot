@@ -699,14 +699,6 @@ def main():
         )
 
 
-"""
-try:
-    ubot.start()
-except BaseException:
-    LOGGER.debug("Userbot Error! Have you added a STRING_SESSION in deploying??")
-    sys.exit(1)
-"""
-
 if __name__ == "__main__":
     LOGGER.info(f"Successfully loaded modules: {str(ALL_MODULES)}")
     pgram.start()
