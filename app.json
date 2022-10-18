@@ -1,15 +1,15 @@
 {
-      "name": "EXON ROBOT",
-      "description": "A Telegram group management bot.",
-      "logo": "https://telegra.ph/file/550a1524598af2578cbf3.jpg", 
+      "name": "Makima",
+      "description": "An Anime themed Telegram group management bot.",
+      "logo": "https://telegra.ph/file/ace91d9ae6af3881d3940.jpg",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Exon"
+         "Makima"
       ],   
-   "repository": "https://github.com/TEAM-ABG/ExonRobot",
+   "repository": "https://github.com/ssid143/AsukaRobot",
    "addons": [
       {
          "options": {
@@ -20,9 +20,9 @@
    ],
    "env": {
       "TOKEN": {
-         "description": "Your bot token. Can be obtained from https://telegram.dog/BotFather/",
+         "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": "YOUR BOT_TOKEN"
+         "value": ""
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
@@ -33,176 +33,161 @@
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
-      },
-      "APP_ID": {
-         "description": "Same as API_ID, BUT  2nd idi",
-         "required": true,
-         "value": ""
-      },
-      "APP_HASH": {
-         "description": "Same as API_HASH, but 2nd id",
+      },    
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "Your postgres sql db.",
          "required": true,
          "value": ""
       },  
       "DATABASE_URL": {
-         "description": "Your Postgres SQL DataBase URI, Get one from https://customer.elephantsql.com/login",
+         "description": "Your postgres sql db.",
          "required": true,
          "value": ""
-      }, 
-      "DATABASE_URL2": {
-         "description": "Your one extra Mongo DataBase URI, Get one from mongodb.com",
-         "required": true,
-         "value": "mongodb+srv://EXONTESTMONGO:EXONTESTMONGO@cluster0.bviw7ic.mongodb.net/?retryWrites=true&w=majority"
-      }, 
-      "REDIS_URL": {
-         "description": "Your Redis URL, Get one from redislabs.com",
-         "required": true,
-         "value": "redis://Madharjoot:GuKhao123_@redis-12276.c275.us-east-1-4.ec2.cloud.redislabs.com:12276/Madharjoot"
-      }, 
-     "REM_BG_API_KEY": {
-         "description": "From:- https://www.remove.bg/",
-         "required": false,
-         "value": "LSdLgCceYz8vNqFgJVzrkDgR"
-      }, 
+      },  
       "OWNER_ID": {
-         "description": "Your Telegram User ID as an integer.",
+         "description": "Your user ID as an integer.",
          "required": true,
-         "value": "5667156680"
-      },
-      "BOT_ID": {
-         "description": "Your Telegram Bot ID.",
-         "required": true,
-         "value": "YOUR BOT_ID"
+         "value": "5132611794"
       },
       "OWNER_USERNAME": {
-         "description": "Your Telegram username without the @",
-         "value": "Abishnoi1M"
+         "description": "Your username without the @",
+         "value": ""
       },
       "SUPPORT_CHAT": {
-         "description": "The Telegram Support Group Where Users of your Bot can Go and ask their Questions.",
+         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Asuka support than consider you made an enemy.",
          "required": true,
-         "value": "AbishnoiMF"
+         "value": "AsukaSupport"
       },
-     "UPDATES_CHANNEL": {
-         "description": "The Telegram News/Update Channel Where Users of your Bot can Go and check updates by you.",
-         "required": true,
-         "value": "Abishnoi_bots"
-      },     
       "EVENT_LOGS": {
-         "description": "Event logs CHANNEL to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001497222182"
+         "value": ""
       },
       "JOIN_LOGGER": {
-         "description": "A CHANNEL  where bot will print who added it to what group, useful during debugging or spam handling.",
+         "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-1001497222182"
+         "value": ""
+      },
+      "ARQ_API_KEY": {
+         "description": "For Some Modules. Get it from @ArqRobot",
+         "required": true,
+         "value": ""
+      },
+      "ARQ_API_URL": {
+         "description": "Uses For Arq Modules. Don't Change Anything Just Leave It.",
+         "required": true,
+         "value": "https://arq.hamker.in"
       },      
+      "CASH_API_KEY": {
+         "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
+         "required": true,
+         "value": "-56ZDRKSYNWDN75M9"
+      },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
-         "required": false,
-         "value": "5LB4TAKPEKZ0"
-      },
-     "START_IMG": {
-         "description": "A Start img link",
-         "required": false,
-         "value": "https://telegra.ph/file/0191f2041ae33e11c1267.jpg"
+         "required": true,
+         "value": "-PHPH3NLA8I37"
       },
       "DEV_USERS": {
-         "description": "Enter the IDs of the users who are the Developers of the Bot. If you are newbie and want help from us Itself, then keep the IDs as they are and add yours",
+         "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Asuka support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "5667156680"
+         "value": "5132611794"
       },
-      "SPAMWATCH_API": {
+      "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
          "value": ""
       }, 
-      "DRAGONS": {
-         "description": "A space separated list of user IDs who you want to assign as sudo users.",
-         "required": false,
-         "value": "5667156680"
-      },
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
          "value": "True"
       },
-      "DEMONS": {
-         "description": "A space separated list of user IDs who can use Gban From Your Bot",
+      "INFOPIC": {
+         "description": "Show picture when used /info.",
+         "value": "True"
+      },
+      "MONGO_DB_URI": {
+         "description": "Your Mongo DB url.",
          "required": false,
-         "value": "5667156680"
+         "value": ""
+      },
+      "DRAGONS": {
+         "description": "A space separated list of user IDs who you want to assign as sudo users.",
+         "required": false,
+         "value": ""
+      },
+      "DEMONS": {
+         "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
+         "required": false,
+         "value": ""
       },
       "TIGERS": {
-         "description": "A space separated list of user IDs who can not be banned by your Bot",
+         "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": "5667156680"
+         "value": ""
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "5667156680"
+         "value": ""
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
          "value": "ANYTHING"
       },
+      "WEBHOOK": {
+         "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is",
+         "required": false,
+         "value": ""
+      },
+      "PORT": {
+         "description": "Port to use for your webhooks. Better leave this as it is on heroku",
+         "required": false,
+         "value": ""
+      },
       "URL": {
          "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
          "required": false,
-         "value": "https://example.herokuapp.com/"
-      },
-      "GENIUS_API_TOKEN": {
-         "description": "Genius API Token get one from genius.com/api-client",
-         "required": false,
-         "value": "rMslyaZoLcPmunSm0Fn_4nMMJjzQ6oy4kP-aVd0xIKv-g37yDZ-9FS1VEpXQ_9CB"
-      },
-      "DONATION_LINK": {
-         "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
-         "required": false,
-         "value": "https://t.me/Abishnoi1M"
-      },
-      "MONGO_DB_URL": {
-         "description": "Your Mongo DB URI",
-         "required": true,
-         "value": "mongodb+srv://EXONTESTMONGO:EXONTESTMONGO@cluster0.bviw7ic.mongodb.net/?retryWrites=true&w=majority"
-      },
-      "HEROKU_API_KEY": {
-         "description": "Your Heroku API Key from heroku profile",
-         "required": true,
          "value": ""
       },
-      "HEROKU_APP_NAME": {
-         "description": "Your Heroku APP name",
-         "required": true,
+      "No_LOAD": {
+         "description": "Dont load these modules cause they shit, space separation",
+         "required": false,
+         "value": ""
+      }, 
+      "BL_CHATS": {
+         "description": "List of chats you want blacklisted.",
+         "required": false,
          "value": ""
       },
-      "INFOPIC": {
-         "description": "Dont change",
-         "required": true,
+      "ALLOW_EXCL": {
+         "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
          "value": "True"
       },
-      "ARQ_API_KEY": {
-         "description": "Get one @ARQRobot on Telegram",
-         "required": true,
+      "DONATION_LINK": {
+         "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it",
+         "required": false,
+         "value": "https://t.me/xelcius"
+      },
+      "DEL_CMDS": {
+         "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
+         "value": "True"
+      },
+      "AI_API_KEY": {
+      "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
+         "required": false,
          "value": ""
+   },      
+      "BAN_STICKER": {
+         "description": "ID of the sticker you want to use when banning people.",
+         "required": false,
+         "value": "CAACAgQAAx0CU_rCTAABAczQXyBOv1TsVK4EfwnkCUT1H0GCkPQAAtwAAwEgTQaYsMtAltpEwhoE"
       },
-      "ARQ_API_URL": {
-         "description": "Leave it as it is",
-         "required": true,
-         "value": "arq.hamker.dev"
-      },
-      "ERROR_LOGS": {
-         "description": "The ID of the Group where the bot will spam with shitty errors and techy stuff",
-         "required": true,
-         "value": "-1001497222182"
+      "WALL_API": {
+         "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
+         "required": false,
+         "value": ""
       }
-   },   
-      "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    }
-  ]
+      
+   }
 }
